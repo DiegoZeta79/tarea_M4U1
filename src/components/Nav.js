@@ -1,18 +1,26 @@
 import React from 'react';
 
-import { Link } from "react-router-dom";
+import '../styles/layout/Nav.css';
+
+import { NavLink } from "react-router-dom";
 
 const Nav = (props) => {
     return (
         <nav>
-            <div class="holder">
+            <div className="holder">
                 <ul>
-                    <li><Link to='/' class="activo">Home</Link></li>
-                    <li><Link to='/nosotros'>Nosotros</Link></li>
-                    <li><Link to='/leyendas'>Leyendas</Link></li>
-                    <li><Link to='/laGuitarra'>La Guitarra</Link></li>
-                    <li><Link to='/cursos'>Cursos</Link></li>
-                    <li><Link to='/contacto'>Contacto</Link></li>
+                    <li><NavLink to='/' className={({ isActive }) => isActive ? "activo" :
+                        undefined}>Home</NavLink></li>
+                    <li><NavLink to='/nosotros' className={({ isActive }) => isActive ? "activo" :
+                        undefined}>Nosotros</NavLink></li>
+                    <li><NavLink to='/leyendas' className={({ isActive }) => isActive ? "activo" :
+                        undefined}>Leyendas</NavLink></li>
+                    <li><NavLink to='/laGuitarra' className={({ isActive }) => isActive ? "activo" :
+                        undefined}>La Guitarra</NavLink></li>
+                    <li><NavLink to='/cursos' className={({ isActive }) => isActive ? "activo" :
+                        undefined}>Cursos</NavLink></li>
+                    <li><NavLink to='/contacto' className={({ isActive }) => isActive ? "activo" :
+                        undefined}>Contacto</NavLink></li>
                 </ul>
             </div>
         </nav>

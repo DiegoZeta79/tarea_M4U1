@@ -1,9 +1,11 @@
 import React from "react";
 
+import '../styles/layout/Header.css';
+
 const Header = (props) => {
     return (
         <header>
-            <div class="holder">
+            <div className="holder">
                 <img src="images/logo_1.png" id="logo" alt="Guitar Z"/>
             </div>
             <h1>

@@ -1,25 +1,28 @@
 import React from "react";
 
+import '../styles/pages/Contacto.css';
+
 const Contacto = (props) => {
     return (
-        <main class="holder">
+
+        <main className="holder">
             <div>
                 <h2>Contacto Rápido</h2>
                 <form className="formulario" action="" method="">
                     <p>
-                        <label for='nombre'>Nombre</label>
+                        <label htmlFor='nombre'>Nombre</label>
                         <input type="text" />
                     </p>
                     <p>
-                        <label for='email'>Email</label>
+                        <label htmlFor='email'>Email</label>
                         <input type="text" />
                     </p>
                     <p>
-                        <label for='telefono'>Teléfono</label>
+                        <label htmlFor='telefono'>Teléfono</label>
                         <input type="text" />
                     </p>
                     <p>
-                        <label for='mensaje'>Mensaje</label>
+                        <label htmlFor='mensaje'>Mensaje</label>
                         <textarea></textarea>
                     </p>
                     <p className="acciones">
